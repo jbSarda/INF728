@@ -294,7 +294,7 @@ def launch_request_4():
         dd_fin = datetime.datetime(year=d_fin.year, month=d_fin.month, day=d_fin.day)
         formatted_date_fin = dd_fin.strftime("%A %d %B %Y")
 
-        country_chosen_1 = st.sidebar.selectbox('First country :', country_name, 3,
+        country_chosen_1 = st.sidebar.selectbox('First country :', country_name, 201,
                                                 key=1)
         full_country_chosen_1 = df_country['FIPS 10-4'][df_country['Name'] == country_chosen_1].values[0]
         country_chosen_2 = st.sidebar.selectbox('Second country :', country_name, 83,
